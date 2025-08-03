@@ -20,7 +20,7 @@ def play_game(level):
     num_attempts = 3  # Her kelime için deneme sayısı (şimdilik kullanılmıyor)
 
     for _ in range(len(words)):
-        random_word = choice(words)  # Rastgele bir kelime seç
+        random_word = random.choice(words)  # Rastgele bir kelime seç
         print(f"Lütfen kelimeyi telaffuz edin: {random_word}")
         recog_word = speech()  # Konuşmadan gelen kelimeyi tanı
         print(recog_word)  # Tanınan kelimeyi ekrana yazdır
